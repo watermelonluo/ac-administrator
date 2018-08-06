@@ -1,0 +1,61 @@
+
+#loadingCon{
+    position: fixed;
+    z-index: 100;
+}
+.tipBox{
+    height: 18px;
+}
+.tips{
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    color: red;
+    vertical-align: top;
+    display: none;
+}
+.form-group{
+    height: 31px;
+}
+
+.form-control{
+    min-width: 200px;
+    font-size: 14px;
+    height: 31px;
+    padding: 0.3rem  0.5rem;
+    color: #0a2152;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.custom-select{
+    min-width: 200px;
+    font-size: 14px;
+    color: #0a2152;
+    height: 31px;
+    padding: 0.3rem  0.5rem;
+}
+.custom-select option{
+    color: #0a2152;
+    font-size: 14px;
+}
+.form-group{
+    margin-bottom: 0;
+}
+
+.handleBtn .btn{
+    font-size: 14px;
+    padding: 0.2rem 0.75rem;
+    background-color: #49A3FF;
+    transition: background-color 0.3s;
+}
+#saveBtn:hover{
+    background-color: #037efc;
+}
+#resetBtn{
+    background-color: #6f777b;
+}
+#resetBtn:hover{
+    background-color: #5a5c5e;
+}
+

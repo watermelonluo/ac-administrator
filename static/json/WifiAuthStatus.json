@@ -1,0 +1,11 @@
+{
+  "status":"yes",
+  "uptime":"365d23h35m59s",
+  "internet":"yes",
+  "auth":"yes",
+  "clients":"2",
+  "clientlist":[
+    {"ipaddr":"192.168.89.75","mac":"00:27:10:e5:2d:68","down":"0","up":"0"},
+    {"ipaddr":"192.168.89.244","mac":"e4:46:da:fd:1d:98","down":"1524879","up":"132144"}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "wanset":{
+    "wanmode":"g3g4",
+    "g3g4":{
+      "ttyUSB":"ttyUSB2",
+      "ttyUSBlist":["ttyUSB0","ttyUSB1","ttyUSB2","ttyUSB3"],
+      "service":"umts",
+      "password":"",
+      "pincode":"",
+      "apn":"ctlte",
+      "mode":"hand",
+      "dialnumber":"*99#",
+      "username":""
+    }
+  },
+  "lanset":{
+    "ipaddr":"192.168.20.1",
+    "netmask":"255.255.255.2",
+    "gateway":"",
+    "maindns":"223.5.5.1",
+    "subdns":"223.6.6.4"
+
+  }
+}

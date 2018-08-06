@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网络设置</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../static/css/modal.css" />
+    <link rel="stylesheet" href="../static/css/forms.css" />
+    <link rel="stylesheet" href="../static/css/switchCheck.css"/>
+    <link rel="stylesheet" href="../static/css/subTitle.css"/>
+    <link rel="stylesheet" href="../static/css/title.css"/>
+    <style>
+        #vpn{
+            margin-top: 36px;
+        }
+        #vpn .col-1{
+            font-size: 14px;
+            color: #000000;
+            min-width: 137px;
+            line-height: 31px;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="navTitle">
+    <span>高级应用</span><span class="middleLine">/</span><span class="span2">VPN设置</span>
+</div>
+
+
+<div class="container-fluid" id="vpn">
+    <div class="row">
+        <div class="col-12 subTitle">
+            <span>网络限速</span>
+        </div>
+    </div>
+
+    <div class="row" style="margin-bottom: 16px; margin-top: 20px">
+        <div class="col-1">状态 : </div>
+        <div class="col-2" style="padding-left: 15px;min-width: 113px;line-height: 31px">
+            <input type="checkbox" name="sex" id="male" class="chooseBtn"/>
+            <label for="male" class="choose-label" style="margin-bottom: 5px"></label>
+            <span class="switchText">关闭</span>
+        </div>
+    </div>
+
+    <div class="row" style="margin-bottom: 18px">
+        <div class="col-1">模式 : </div>
+        <div class="col-2">
+            <select class="custom-select" id="modeList">
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-1">服务器 : </div>
+        <div class="col-2">
+            <input type="text" class="form-control" id="server">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 text-right tipBox">
+            <span class="tips">输入格式有误</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-1">用户名 : </div>
+        <div class="col-2">
+            <input type="text" class="form-control" id="userName" autocomplete="off">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 text-right tipBox">
+            <span class="tips">用户名输入格式有误</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-1">密码 : </div>
+        <div class="col-2">
+            <input type="password" class="form-control" id="pwd">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 text-right tipBox">
+            <span class="tips">密码输入格式有误</span>
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid" style="padding-bottom: 100px;padding-top: 30px">
+    <div class="row handleBtn">
+        <div class="col-3" style="min-width: 348px;padding-left: 30px">
+            <button class="btn text-white" type="submit" style="vertical-align: top;margin-right: 50px" id="saveBtn">保存</button><button class="btn text-white" type="submit" id="resetBtn">刷新</button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="loadingCon">
+    <div class="row">
+        <div class="col-12 text-center">
+            <img src="../static/images/Flickr-1.2s-200px.gif">
+        </div>
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+    <!-- 弹窗内容 -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 style="line-height: 34px">提示</h2>
+            <span class="close" id="close">&times;</span>
+        </div>
+        <div class="modal-body" id="textBody">
+            <p id="textCon"></p>
+        </div>
+        <div class="modal-footer">
+            <span class="confirm" id="confirm">确定</span>
+        </div>
+    </div>
+
+</div>
+
+<script src='../static/js/jquery-3.3.1.min.js'></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/VpnConfig.js"></script>
+</body>
+</html>

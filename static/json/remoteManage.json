@@ -1,0 +1,9 @@
+{
+  "enable": "0",
+  "type": "supernode",
+  "ipaddr": "192.168.1.100",
+  "supernode": "223.5.5.5",
+  "port": "192.168.1.1",
+  "community": "name",
+  "key": "123456"
+}

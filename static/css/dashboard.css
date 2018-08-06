@@ -1,0 +1,89 @@
+.navbar-container{
+    width: 100%;
+}
+
+.navbar-header{
+    width: 30%;
+    height: 70px;
+    line-height: 70px;
+}
+.navbar-header:first-child{
+    width: 70%;
+}
+
+.navbar-header .adminName{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.navbar-header .userName{
+    font-size: 1rem;
+    color: #869AB2;
+    margin-right: 2rem;
+}
+.navbar-header .logout{
+    color: #869AB2;
+    padding-right: 2rem;
+}
+.navbar-header .logout:hover{
+    color: #a6b4c4;
+}
+.fa-user-circle-o{
+    font-size: 1rem;
+    margin-right: 0.6rem;
+    color: #869AB2;
+}
+.nav-list>li{
+    width: 100%;
+}
+
+.nav-list>li>a>[class*="icon-"]:first-child {
+    color: black;
+    font-size: 12px;
+}
+
+.sidebar-collapse{
+    margin-top: 30px;
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+.nav-list>li>a{
+    height: 40px;
+    line-height: 40px;
+}
+.nav-list #bgColor{
+    color: #67AEF5;
+}
+.nav-list .bgColor2{
+    color: #67AEF5 !important;
+}
+.nav-list #bgColor3{
+    color: #67AEF5 !important;
+}
+.company{
+    margin-top: 80px;
+    color: #8E8E8E;
+}
+.company div:first-child{
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+#sidebar{
+    background-color: #2E2E38;
+}
+#sidebar::before{
+    background-color: #2E2E38;
+}
+/*#sidebar-collapse{
+    background-color: #2E2E38;
+}*/
+#sidebar .nav-list>li a{
+    background-color: #383845;
+    color: #99A9B9;
+}
+#sidebar .submenu li a{
+    background-color: #2E2E38;
+    color: #99A9B9;
+}

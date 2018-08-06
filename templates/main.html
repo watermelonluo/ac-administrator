@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>无线AP管理平台</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- basic styles -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+
+    <!-- page specific plugin styles -->
+
+    <!-- ace styles -->
+
+    <link rel="stylesheet" href="../static/css/ace.css" />
+
+
+    <link rel="stylesheet" href="../static/css/dashboard.css">
+
+    <link rel="stylesheet" href="../static/css/demo.css">
+
+    <script src="../static/js/ace-extra.min.js"></script>
+</head>
+
+<body style="height: 100%;overflow-y: hidden">
+<div class="navbar navbar-default" id="navbar" style="padding: 0">
+    <script type="text/javascript">
+        try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+    </script>
+
+    <div class="navbar-container text-center" id="navbar-container" style="height: 70px;background-color: #242431">
+        <div class="navbar-header text-left" style="float: left">
+            <span class="text-white adminName">高级网络管理平台</span>
+        </div><!-- /.navbar-header -->
+
+        <div class="navbar-header text-right" role="navigation" style="float: right">
+            <div>
+                <i class="fa fa-user-circle-o"></i><span class="userName">管理员</span>
+                <a class="logout" href="#">退出</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="main-container" id="main-container">
+    <div class="main-container-inner">
+        <a class="menu-toggler" id="menu-toggler" href="#">
+            <span class="menu-text"></span>
+        </a>
+
+        <div class="sidebar" id="sidebar">
+            <script type="text/javascript">
+                try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
+            </script>
+
+            <ul class="nav nav-list">            
+
+                <li>
+                    <a href="#" class="dropdown-toggle mainTitle" data-url="NetworkStatus.html">
+                        <i class="fa fa-random"></i>
+                        <span class="menu-text">网络管理</span>
+
+                        <b class="arrow icon-angle-down"></b>
+                    </a>
+
+                    <ul class="submenu">
+                        <li>
+                            <a href="#" data-url="NetworkStatus.html" class="getUrlByClass">
+                                <i class="icon-double-angle-right"></i>
+                                网络状态
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" data-url="NetworkConfig.html" class="getUrlByClass">
+                                <i class="icon-double-angle-right"></i>
+                                网络设置
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" data-url="NetworkDhcp.html" class="getUrlByClass">
+                                <i class="icon-double-angle-right"></i>
+                                DHCP服务
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle mainTitle" data-url="RemoteManage.html">
+                        <i class="fa fa-first-order"></i>
+                        <span class="menu-text">高级应用</span>
+
+                        <b class="arrow icon-angle-down"></b>
+                    </a>
+
+                    <ul class="submenu">
+                        <li>
+                            <a href="#" data-url="RemoteManage.html" class="getUrlByClass">
+                                <i class="icon-double-angle-right"></i>
+                                远程管理
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" data-url="SpeedLimit.html" class="getUrlByClass">
+                                <i class="icon-double-angle-right"></i>
+                                网络限速
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" data-url="VpnConfig.html" class="getUrlByClass">
+                                <i class="icon-double-angle-right"></i>
+                                VPN设置
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle mainTitle" data-url="WifiAuthStatus.html">
+                        <i class="fa fa-wifi"></i>
+                        <span class="menu-text">热点认证</span>
+
+                        <b class="arrow icon-angle-down"></b>
+                    </a>
+
+                    <ul class="submenu">
+                        <li>
+                            <a href="#" data-url="WifiAuthStatus.html" class="getUrlByClass">
+                                <i class="icon-double-angle-right"></i>
+                                认证状态
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-url="WifiAuthConfig.html" class="getUrlByClass">
+                                <i class="icon-double-angle-right"></i>
+                                配置热点
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle mainTitle" data-url="SystemConfig.html">
+                        <i class="fa fa-cogs"></i>
+                        <span class="menu-text">系统工具</span>
+
+                        <b class="arrow icon-angle-down"></b>
+                    </a>
+
+                    <ul class="submenu">
+                        <li>
+                            <a href="#" data-url="SystemConfig.html" class="getUrlByClass">
+                                <i class="icon-double-angle-right"></i>
+                                系统设置
+                            </a>
+                        </li>                      
+                    </ul>
+                </li>
+            </ul><!-- /.nav-list -->
+
+            <div class="sidebar-collapse text-center" id="sidebar-collapse" style="color: white">
+                <i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+            </div>
+            <div class="company text-center">
+                <div>Copyright © 2018</div>
+                <div>盟贝特网络科技</div>
+            </div>
+
+            <script type="text/javascript">
+                try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+            </script>
+        </div>
+
+        <!--内容区域-->
+        <div class="main-content" id="frame">
+            <div class="container-fluid" style="padding: 0;height: 100%">
+                <div class="row frame" style="margin: 0;height: 100%">
+                    <iframe name="myIframe" id="myIframe" src="NetworkStatus.html" frameborder="0" align="left" scrolling="auto" width="100%" height="99%">
+                            
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /.main-container-inner -->
+
+<script src='../static/js/jquery-3.3.1.min.js'></script>
+
+<script src="../static/js/bootstrap.min.js"></script>
+<!-- ace scripts -->
+
+<script src="../static/js/ace.min.js"></script>
+
+<script>
+
+    /*  外容器高度  */
+    var frameCon=document.getElementById('frame');
+    frameCon.style.height=document.documentElement.clientHeight-70+'px';
+
+
+    /*   左侧点击进入各个页面   */
+    var allUrlItems=document.querySelectorAll('.getUrlByClass');
+    for (let i=0;i<allUrlItems.length;i++) {
+        allUrlItems[i].onclick=function () {
+            document.getElementById('myIframe').setAttribute('src',this.getAttribute('data-url')+'?_='+Math.floor(Math.random()*100000));
+            for (let i=0;i<allUrlItems.length;i++) {
+                allUrlItems[i].id='';
+            }
+            this.id='bgColor';
+        }
+    }
+
+    /*   移除id  */
+    function removeAllUrlItemsId() {
+        for (let i=0;i<allUrlItems.length;i++) {
+            allUrlItems[i].id='';
+        }
+    }
+
+    /* 首次进入请求ajax  */
+    var iframe = document.getElementById("myIframe").contentWindow;
+    
+
+    /*   其他组设置id  */
+
+
+    /*  退出  */
+    $('.logout').click(function () {
+        logout();
+    });
+    function logout() {
+        window.location.href='fastnet_logout.html';
+    }
+
+    /*  ip跳转  */
+    function ipChange(ipaddr) {
+        window.location='http://'+ipaddr;
+    }
+    $(window).resize(function() {
+        frameCon.style.height=document.documentElement.clientHeight-70+'px';
+    });
+
+</script>
+</body>
+</html>

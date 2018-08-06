@@ -1,0 +1,8 @@
+{
+  "enable": "1",
+  "modelist":["pptp", "l2tp"],
+  "mode": "l2tp",
+  "server": "1.23456.82",
+  "username": "lllluooo",
+  "password": "777888999"
+}

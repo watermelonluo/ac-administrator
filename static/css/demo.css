@@ -1,0 +1,55 @@
+
+.content-title div{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+.content-title div a{
+    font-size: 1rem;
+    color: #32383e;
+}
+
+.content-title span{
+    margin-left: 5px;
+}
+
+.search{
+    height: 60px;
+    background: #d1ecf1;
+    line-height: 60px;
+}
+
+.search span{
+    font-size: 14px;
+    color: black;
+    margin-right: 10px;
+}
+
+.search select{
+    border-radius: 3px;
+    height: 36px;
+    border: none;
+    width: 161px;
+
+}
+.search .inputDiv input{
+    border-radius: 3px;
+    height: 36px;
+    border: none;
+    text-indent: 10px;
+    vertical-align: middle;
+}
+.search .inputDiv .btn{
+    height: 36px;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.apconfig-table{
+    margin-top: 15px;
+}
+
+.apconfig-table thead tr th{
+    background: #ffd9d5;
+}
+
