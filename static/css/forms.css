@@ -2,6 +2,7 @@
 #loadingCon{
     position: fixed;
     z-index: 100;
+    display: none;
 }
 .tipBox{
     height: 18px;

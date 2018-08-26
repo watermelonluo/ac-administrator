@@ -4,11 +4,6 @@ const regMac=/^[a-f0-9]{1,2}\:[a-f0-9]{1,2}\:[a-f0-9]{1,2}\:[a-f0-9]{1,2}\:[a-f0
 const addr=true;
 $(function () {
 
-    /*   loading gif图加载   */
-    const loadingCon=document.getElementById('loadingCon');
-    const loadingHeight=parseInt(getComputedStyle(loadingCon).height);
-    loadingCon.style.top=window.screen.height/2-loadingHeight/2-150+'px';
-
     var actionData=null; //用来存数据
 
     /*   开关   */

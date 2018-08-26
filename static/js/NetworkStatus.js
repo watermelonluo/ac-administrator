@@ -1,13 +1,8 @@
 ;
 const addr=true;
-
-/*   loading gif图加载   */
-const loadingCon=document.getElementById('loadingCon');
-const loadingHeight=parseInt(getComputedStyle(loadingCon).height);
-loadingCon.style.top=window.screen.height/2-loadingHeight/2-150+'px';
 function networkStatus() {
 
-    /*   首次进入页面ajax请求   */
+    /*   首次进入页面ajax请求
     $.ajax({
         type: "GET",
         url: addr ? '../static/json/networkStatus.json' : "./Mobisys-NetworkStatus",
@@ -51,7 +46,43 @@ function networkStatus() {
             data.wan.subdns ? $('.wanStatusItem').eq(6).html(data.wan.subdns) : $('.wanStatusItem').eq(6).html('');
             data.wan.linetime ? $('.wanStatusItem').eq(7).html(changeLineTime(data.wan.linetime)) : $('.wanStatusItem').eq(7).html('');
         }
-    })
+    })*/
+    console.log(ns)
+    var data=ns;
+    if (data.interface) {
+        $('#interface .statusImg').each(function (i) {
+            $(this).attr('data-mark',data.interface[i]);
+            if ($(this).attr('data-mark')=='1') {
+                $(this).attr('class','statusImg connect-on');
+                $(this).next().next().html('已连接');
+            } else {
+                $(this).attr('class','statusImg connect-off')
+                $(this).next().next().html('未连接');
+            }
+        });
+    }
+
+    data.lan.ipaddr ? $('.lanStatusItem').eq(0).html(data.lan.ipaddr) : $('.lanStatusItem').eq(0).html('');
+    data.lan.netmask ? $('.lanStatusItem').eq(1).html(data.lan.netmask) : $('.lanStatusItem').eq(1).html('');
+    data.lan.gateway ? $('.lanStatusItem').eq(2).html(data.lan.gateway) : $('.lanStatusItem').eq(2).html('');
+    data.lan.maindns ? $('.lanStatusItem').eq(3).html(data.lan.maindns) : $('.lanStatusItem').eq(3).html('');
+    data.lan.subdns ? $('.lanStatusItem').eq(4).html(data.lan.subdns) : $('.lanStatusItem').eq(4).html('');
+
+    data.wan.wanmode ? $('.wanStatusItem').eq(0).html(data.wan.wanmode) : $('.wanStatusItem').eq(0).html('');
+    if (data.wan.wanstatus=='1') {
+        $('.wanStatusItem').eq(1).html('连接');
+        $('.wanStatusItem').eq(1).next().attr('id','faColorOn');
+    }else {
+        $('.wanStatusItem').eq(1).html('未连接');
+        $('.wanStatusItem').eq(1).next().attr('id','faColorOff');
+    }
+    data.wan.ipaddr ? $('.wanStatusItem').eq(2).html(data.wan.ipaddr) : $('.wanStatusItem').eq(2).html('');
+    data.wan.netmask ? $('.wanStatusItem').eq(3).html(data.wan.netmask) : $('.wanStatusItem').eq(3).html('');
+    data.wan.gateway ? $('.wanStatusItem').eq(4).html(data.wan.ipaddr) : $('.wanStatusItem').eq(4).html('');
+    data.wan.maindns ? $('.wanStatusItem').eq(5).html(data.wan.maindns) : $('.wanStatusItem').eq(5).html('');
+    data.wan.subdns ? $('.wanStatusItem').eq(6).html(data.wan.subdns) : $('.wanStatusItem').eq(6).html('');
+    data.wan.linetime ? $('.wanStatusItem').eq(7).html(changeLineTime(data.wan.linetime)) : $('.wanStatusItem').eq(7).html('');
+
 }
 networkStatus();
 setInterval(networkStatus,2000);

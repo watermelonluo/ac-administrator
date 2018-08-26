@@ -17,3 +17,9 @@ body{
 .middleLine{
     margin: 0 15px;
 }
+
+#loadingCon{
+    position: fixed;
+    z-index: 100;
+    display: none;
+}

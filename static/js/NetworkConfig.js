@@ -4,13 +4,6 @@ const reg = /^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])
 var ipOld=null;
 const addr=true;
 
-
-/*   loading gif图加载   */
-const loadingCon=document.getElementById('loadingCon');
-const loadingHeight=parseInt(getComputedStyle(loadingCon).height);
-loadingCon.style.top=window.screen.height/2-loadingHeight/2-150+'px';
-
-
 /*   弹窗   */
 $("#close").click(function () {
     $('#myModal').fadeOut();
@@ -32,9 +25,7 @@ $(function(){
             $('#loadingCon').fadeOut();
             renderPage(data)
         }
-
     });
-
 
     /*  页面渲染  */
     function renderPage(data) {

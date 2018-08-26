@@ -2,12 +2,6 @@
 const addr=true;
 $(function () {
 
-    /*   loading gif图加载   */
-    var loadingCon=document.getElementById('loadingCon');
-    var loadingHeight=parseInt(getComputedStyle(loadingCon).height);
-    loadingCon.style.top=window.screen.height/2-loadingHeight/2-150+'px';
-
-
     /*   开关按钮   */
     var toggleBtn=document.querySelector('.chooseBtn');
     var switchText=document.querySelector('.switchText');
