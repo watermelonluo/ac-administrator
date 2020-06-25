@@ -27,3 +27,5 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+ac，路由器，无线网桥后台管理系统 vue,vue-router
