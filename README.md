@@ -1,9 +1,29 @@
-# ac-administrator
-网桥，路由器管理系统
+# ac-admin
 
-公司是做无线网桥，路由器的，使用的时候需要一套系统来控制产品，因功能，参数之类比较多，系统相对来讲还算比较复杂。系统功能主要有表单验证，表单数据提交，开关按钮组件，文件上传，图片预览与上传，系统重启与重置，删除，添加，设置，手机热点页面适配。使用到的技术点：
-•	使用bootstrap搭建后台管理系统框架
-•	FromData，FileReader，ajax，json,
-•	使用CSS3，HTML5新特性，让页面更美观
-•	使用js，jquery操作DOM，ajax请求，页面交互与渲染
+## Project setup
+```
+npm install
+```
 
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your unit tests
+```
+npm run test:unit
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
